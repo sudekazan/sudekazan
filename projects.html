@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeler | Sude Kazan</title>
+    <meta name="description"
+        content="Sude Kazan'ın geliştirdiği projeler: Tarif Defteri Flutter uygulaması ve HTM Moda web sitesi." />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo">SK</a>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html" data-i18n="nav.home">Ana Sayfa</a>
+            <a href="about.html" data-i18n="nav.about">Hakkımda</a>
+            <a href="experience.html" data-i18n="nav.experience">Staj</a>
+            <a href="projects.html" data-i18n="nav.projects">Projeler</a>
+            <a href="contact.html" data-i18n="nav.contact">İletişim</a>
+        </div>
+        <div class="nav-controls">
+            <button class="nav-ctrl-btn" id="theme-toggle" aria-label="Tema değiştir">🌙</button>
+            <button class="nav-ctrl-btn lang-btn" id="lang-toggle" aria-label="Dil değiştir">EN</button>
+            <button class="hamburger" id="hamburger" aria-label="Menü">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+
+        <div class="page-hero fade-up">
+            <p class="section-tag" data-i18n="projects.tag">Projeler</p>
+            <h1 data-i18n="projects.heroTitle">Geliştirdiğim <span class="grad-text">Projeler</span></h1>
+            <p data-i18n="projects.heroSub">Uçtan uca tasarlayıp hayata geçirdiğim, canlıdaki uygulamalar ve web
+                siteleri.</p>
+        </div>
+
+        <div class="container projects-section">
+
+            <!-- ── Proje 1: Tarif Defteri ── -->
+            <div class="project-full-card fade-up">
+                <div class="project-header">
+                    <div class="project-emoji">🍽️</div>
+                    <div class="project-header-text">
+                        <h2>Tarif Defteri Uygulaması</h2>
+                        <p>Flutter · Dart · Firebase · Google Play Store</p>
+                    </div>
+                    <span class="project-status ongoing" data-i18n="projects.p1Status">App Store Entegrasyonu Devam
+                        Ediyor</span>
+                </div>
+                <div class="project-body">
+                    <div>
+                        <p class="project-desc" data-i18n="projects.p1Desc">
+                            Kullanıcıların kişisel yemek tariflerini oluşturup düzenleyebildiği, veri aktarımı ve
+                            depolama mimarisine sahip bir mobil uygulama geliştirdim.
+                        </p>
+                        <div class="feature-list">
+                            <span class="feature-item" data-i18n="projects.p1f1">Kişisel tarif oluşturma ve
+                                düzenleme</span>
+                            <span class="feature-item" data-i18n="projects.p1f2">Firebase gerçek zamanlı veri aktarımı
+                                ve depolama</span>
+                            <span class="feature-item" data-i18n="projects.p1f3">AI destekli tarif önerisi
+                                özelliği</span>
+                            <span class="feature-item" data-i18n="projects.p1f4">Google Play Store'da yayında</span>
+                            <span class="feature-item" data-i18n="projects.p1f5">Tüm Android cihazlarla uyumlu
+                                responsive tasarım</span>
+                            <span class="feature-item" data-i18n="projects.p1f6">App Store entegrasyonu devam
+                                etmektedir</span>
+                        </div>
+                    </div>
+                    <div class="project-sidebar">
+                        <div class="sidebar-block">
+                            <h4 data-i18n="projects.techLabel">Teknolojiler</h4>
+                            <div class="skills-grid">
+                                <span class="badge">Flutter</span>
+                                <span class="badge">Dart</span>
+                                <span class="badge">Firebase</span>
+                                <span class="badge badge-teal">Google Play</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-block">
+                            <h4 data-i18n="projects.linksLabel">Bağlantılar</h4>
+                            <div class="project-links-row">
+                                <a href="https://play.google.com/store/apps/details?id=com.sudekazan.tarif_defteri_yeni"
+                                    target="_blank" class="project-link-btn" data-i18n="projects.p1link1">🏪 Google
+                                    Play'de Gör</a>
+                                <a href="https://github.com/sudekazan/tarifDefteri.git" target="_blank"
+                                    class="project-link-btn" data-i18n="projects.p1link2">💻 Kaynak Kod (GitHub)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── Proje 2: HTM Moda ── -->
+            <div class="project-full-card fade-up fade-up-delay-1">
+                <div class="project-header">
+                    <div class="project-emoji">🛍️</div>
+                    <div class="project-header-text">
+                        <h2>HTM Moda — Kurumsal Web Sitesi</h2>
+                        <p>HTML · CSS · JavaScript · Responsive Tasarım</p>
+                    </div>
+                    <span class="project-status" data-i18n="projects.p2Status">🟢 Canlı</span>
+                </div>
+                <div class="project-body">
+                    <div>
+                        <p class="project-desc" data-i18n="projects.p2Desc">
+                            Bir butik mağaza için modern, kullanıcı dostu ve tüm cihazlarla uyumlu (responsive) bir
+                            e-ticaret / tanıtım arayüzü tasarlayıp geliştirdim.
+                        </p>
+                        <div class="feature-list">
+                            <span class="feature-item" data-i18n="projects.p2f1">Modern, responsive butik mağaza
+                                arayüzü</span>
+                            <span class="feature-item" data-i18n="projects.p2f2">Ürün sergileme ve kategori
+                                yapısı</span>
+                            <span class="feature-item" data-i18n="projects.p2f3">Vanilla JS ile dinamik
+                                etkileşimler</span>
+                            <span class="feature-item" data-i18n="projects.p2f4">Tüm cihazlarla uyumlu mobil-first
+                                tasarım</span>
+                            <span class="feature-item" data-i18n="projects.p2f5">Canlı olarak yayında
+                                (htmmoda.com.tr)</span>
+                        </div>
+                    </div>
+                    <div class="project-sidebar">
+                        <div class="sidebar-block">
+                            <h4 data-i18n="projects.techLabel">Teknolojiler</h4>
+                            <div class="skills-grid">
+                                <span class="badge">HTML5</span>
+                                <span class="badge">CSS3</span>
+                                <span class="badge">JavaScript</span>
+                                <span class="badge badge-teal">Canlı</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-block">
+                            <h4 data-i18n="projects.linksLabel">Bağlantılar</h4>
+                            <div class="project-links-row">
+                                <a href="https://www.google.com/search?q=htmmoda.com.tr" target="_blank"
+                                    class="project-link-btn" data-i18n="projects.p2link1">🌐 Canlı Siteyi Gör</a>
+                                <a href="https://github.com/sudekazan/butik_magaza_web.git" target="_blank"
+                                    class="project-link-btn" data-i18n="projects.p2link2">💻 Kaynak Kod (GitHub)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html" data-i18n="nav.about">Hakkımda</a>
+            <a href="experience.html" data-i18n="nav.experience">Staj</a>
+            <a href="projects.html" data-i18n="nav.projects">Projeler</a>
+            <a href="contact.html" data-i18n="nav.contact">İletişim</a>
+            <a href="https://www.linkedin.com/in/sude-kazan-0478b9297/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/sudekazan" target="_blank">GitHub</a>
+        </div>
+        <p data-i18n="footer.rights">© 2025 <strong>Sude Kazan</strong> — Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

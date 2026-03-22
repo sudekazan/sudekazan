@@ -1,0 +1,165 @@
+/* ============================================================
+   projects.css — Projeler Sayfası Stilleri
+   ============================================================ */
+
+.projects-section {
+    padding-bottom: 5rem;
+}
+
+/* ── Full Project Card ── */
+.project-full-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    transition: var(--transition);
+}
+
+.project-full-card:hover {
+    border-color: rgba(124, 92, 252, 0.35);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Card Header ── */
+.project-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.project-emoji {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(124, 92, 252, 0.2) 0%, rgba(78, 205, 196, 0.2) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.project-header-text h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 0.3rem;
+}
+
+.project-header-text p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.project-status {
+    padding: 0.35rem 0.9rem;
+    border-radius: 50px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    background: rgba(78, 205, 196, 0.12);
+    color: var(--accent2);
+    border: 1px solid rgba(78, 205, 196, 0.3);
+    white-space: nowrap;
+}
+
+.project-status.ongoing {
+    background: rgba(124, 92, 252, 0.12);
+    color: #a78bfa;
+    border-color: rgba(124, 92, 252, 0.3);
+}
+
+/* ── Card Body ── */
+.project-body {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+}
+
+.project-desc {
+    color: var(--text-muted);
+    line-height: 1.8;
+    font-size: 0.92rem;
+}
+
+.feature-list {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+.feature-item::before {
+    content: '›';
+    color: var(--accent1);
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* ── Sidebar Inside Card ── */
+.project-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.sidebar-block h4 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    margin-bottom: 0.6rem;
+}
+
+.project-links-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project-link-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.82rem;
+    font-weight: 600;
+    background: var(--surface-hov);
+    border: 1px solid var(--border);
+    color: var(--text);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.project-link-btn:hover {
+    border-color: var(--accent1);
+    background: rgba(124, 92, 252, 0.1);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .project-header {
+        grid-template-columns: auto 1fr;
+    }
+
+    .project-status {
+        display: none;
+    }
+
+    .project-body {
+        grid-template-columns: 1fr;
+    }
+}

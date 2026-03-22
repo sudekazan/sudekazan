@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sude Kazan | Yazılım Mühendisi</title>
+    <meta name="description"
+        content="Sude Kazan — Bandırma Onyedi Eylül Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisi. Flutter ve web teknolojileri üzerine kişisel portföy sitesi." />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+
+    <!-- ── Navbar ── -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo">Sude Kazan</a>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html" data-i18n="nav.home">Ana Sayfa</a>
+            <a href="about.html" data-i18n="nav.about">Hakkımda</a>
+            <a href="experience.html" data-i18n="nav.experience">Staj</a>
+            <a href="projects.html" data-i18n="nav.projects">Projeler</a>
+            <a href="contact.html" data-i18n="nav.contact">İletişim</a>
+        </div>
+        <div class="nav-controls">
+            <button class="nav-ctrl-btn" id="theme-toggle" aria-label="Tema değiştir">🌙</button>
+            <button class="nav-ctrl-btn lang-btn" id="lang-toggle" aria-label="Dil değiştir">EN</button>
+            <button class="hamburger" id="hamburger" aria-label="Menü">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ── Hero ── -->
+    <div class="page-wrapper">
+        <section class="hero-section">
+            <div class="hero-inner">
+                <!-- Text -->
+                <div class="fade-up">
+                    <p class="hero-greeting" data-i18n="index.greeting">👋 Merhaba, ben</p>
+                    <h1 class="hero-name">Sude <span class="grad-text">Kazan</span></h1>
+                    <div class="hero-typing-wrapper">
+                        <span id="typing-text"></span><span class="cursor"></span>
+                    </div>
+                    <p class="hero-desc" data-i18n="index.heroDesc">
+                        Bandırma Onyedi Eylül Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim.
+                        Flutter/Dart ile mobil uygulamalar ve HTML/CSS/JS ile modern web projeleri geliştiriyorum.
+                        Kullanıcı dostu, değer üreten yazılımlar inşa etmeyi seviyorum.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="projects.html" class="btn btn-primary">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M3 7l9-4 9 4v10l-9 4-9-4V7z" />
+                            </svg>
+                            <span data-i18n="index.btnProjects">Projelerimi Gör</span>
+                        </a>
+                        <a href="contact.html" class="btn btn-outline">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                            </svg>
+                            <span data-i18n="index.btnContact">İletişime Geç</span>
+                        </a>
+                        <a href="mart_2026_cv.pdf" download class="btn btn-outline">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M12 5v14m7-7l-7 7-7-7" />
+                            </svg>
+                            <span data-i18n="index.btnCV">CV İndir</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo -->
+                <div class="hero-photo-wrap fade-up fade-up-delay-2">
+                    <div class="hero-photo-ring">
+                        <div class="hero-photo-inner">🧑‍💻</div>
+                    </div>
+                    <div class="floating-badge b1"><span>📱</span> Flutter & Dart</div>
+                    <div class="floating-badge b2"><span>🌐</span> Web Dev</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Quick Nav Cards ── -->
+        <div class="quick-nav">
+            <p class="quick-nav-title" data-i18n="index.exploreTitle">Keşfet</p>
+            <div class="quick-nav-grid">
+                <a href="about.html" class="quick-card fade-up">
+                    <div class="quick-card-icon">🧑‍🎓</div>
+                    <div>
+                        <span data-i18n="index.qAbout">Hakkımda</span>
+                        <small data-i18n="index.qAboutSub">Eğitim & Beceriler</small>
+                    </div>
+                </a>
+                <a href="experience.html" class="quick-card fade-up fade-up-delay-1">
+                    <div class="quick-card-icon">💼</div>
+                    <div>
+                        <span data-i18n="index.qExp">Staj</span>
+                        <small data-i18n="index.qExpSub">Qapgan Mühendislik</small>
+                    </div>
+                </a>
+                <a href="projects.html" class="quick-card fade-up fade-up-delay-2">
+                    <div class="quick-card-icon">🚀</div>
+                    <div>
+                        <span data-i18n="index.qProjects">Projeler</span>
+                        <small data-i18n="index.qProjectsSub">2 canlı proje</small>
+                    </div>
+                </a>
+                <a href="contact.html" class="quick-card fade-up fade-up-delay-3">
+                    <div class="quick-card-icon">✉️</div>
+                    <div>
+                        <span data-i18n="index.qContact">İletişim</span>
+                        <small data-i18n="index.qContactSub">Bana ulaşın</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── Footer ── -->
+    <footer>
+        <div class="footer-links">
+            <a href="about.html" data-i18n="nav.about">Hakkımda</a>
+            <a href="experience.html" data-i18n="nav.experience">Staj</a>
+            <a href="projects.html" data-i18n="nav.projects">Projeler</a>
+            <a href="contact.html" data-i18n="nav.contact">İletişim</a>
+            <a href="https://www.linkedin.com/in/sude-kazan-0478b9297/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/sudekazan" target="_blank">GitHub</a>
+        </div>
+        <p data-i18n="footer.rights">© 2025 <strong>Sude Kazan</strong> — Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+/* ============================================================
+   contact.css — İletişim Sayfası Stilleri
+   ============================================================ */
+
+.contact-section {
+    padding-bottom: 5rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* ── Info Block ── */
+.contact-info-block h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem;
+    border-radius: var(--radius);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    margin-bottom: 1rem;
+    transition: var(--transition);
+    text-decoration: none;
+    color: var(--text);
+}
+
+.contact-card:hover {
+    border-color: rgba(124, 92, 252, 0.4);
+    background: var(--surface-hov);
+    transform: translateX(4px);
+}
+
+.contact-card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    background: rgba(124, 92, 252, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+}
+
+.contact-card-icon.teal {
+    background: rgba(78, 205, 196, 0.12);
+}
+
+.contact-card .label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 0.2rem;
+}
+
+.contact-card .value {
+    font-weight: 600;
+    font-size: 0.92rem;
+}
+
+/* ── Availability ── */
+.availability-box {
+    background: rgba(78, 205, 196, 0.08);
+    border: 1px solid rgba(78, 205, 196, 0.25);
+    border-radius: var(--radius);
+    padding: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.availability-box .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent2);
+    margin-right: 0.5rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(78, 205, 196, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 0 6px rgba(78, 205, 196, 0);
+    }
+}
+
+.availability-box p {
+    font-size: 0.85rem;
+    color: var(--accent2);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.availability-box small {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+/* ── Form Card ── */
+.form-card {
+    padding: 2rem;
+}
+
+.form-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 0.85rem 1rem;
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    outline: none;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent1);
+    background: var(--surface-hov);
+    box-shadow: 0 0 0 3px rgba(124, 92, 252, 0.15);
+}
+
+.form-group textarea {
+    min-height: 130px;
+}
+
+.form-error {
+    font-size: 0.78rem;
+    color: #f87171;
+    margin-top: 0.3rem;
+    display: none;
+}
+
+.form-success {
+    display: none;
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    background: rgba(78, 205, 196, 0.1);
+    border: 1px solid rgba(78, 205, 196, 0.3);
+    color: var(--accent2);
+    font-weight: 600;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}

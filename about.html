@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hakkımda | Sude Kazan</title>
+    <meta name="description" content="Sude Kazan hakkında — eğitim, beceriler ve özgeçmiş bilgileri." />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo">Sude Kazan</a>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html" data-i18n="nav.home">Ana Sayfa</a>
+            <a href="about.html" data-i18n="nav.about">Hakkımda</a>
+            <a href="experience.html" data-i18n="nav.experience">Staj</a>
+            <a href="projects.html" data-i18n="nav.projects">Projeler</a>
+            <a href="contact.html" data-i18n="nav.contact">İletişim</a>
+        </div>
+        <div class="nav-controls">
+            <button class="nav-ctrl-btn" id="theme-toggle" aria-label="Tema değiştir">🌙</button>
+            <button class="nav-ctrl-btn lang-btn" id="lang-toggle" aria-label="Dil değiştir">EN</button>
+            <button class="hamburger" id="hamburger" aria-label="Menü">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+
+        <div class="page-hero fade-up">
+            <p class="section-tag" data-i18n="about.tag">Hakkımda</p>
+            <h1 data-i18n="about.heroTitle">Ben <span class="grad-text">Kimim?</span></h1>
+            <p data-i18n="about.heroSub">Yazılım mühendisliği öğrencisi, mobil ve web geliştirici.</p>
+        </div>
+
+        <div class="container" style="padding-bottom: 5rem;">
+            <div class="about-grid">
+
+                <!-- Left: Photo + Social -->
+                <div class="fade-up">
+                    <div class="glass-card about-photo-card">
+                        <div class="about-avatar">🧑‍💻</div>
+                        <div class="about-name">Sude Kazan</div>
+                        <div class="about-uni" data-i18n="about.uni">🎓 Yazılım Mühendisliği</div>
+                        <div class="about-social">
+                            <a href="mailto:sudekazan1907@gmail.com" class="social-link">
+                                <span>📧</span> <span data-i18n="about.socialEmail">sudekazan1907@gmail.com</span>
+                            </a>
+                            <a href="tel:+905510103652" class="social-link">
+                                <span>📞</span> <span data-i18n="about.socialPhone">+90 551 010 3652</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sude-kazan-0478b9297/" target="_blank"
+                                class="social-link">
+                                <span>🔗</span> <span data-i18n="about.socialLI">LinkedIn Profili</span>
+                            </a>
+                            <a href="https://github.com/sudekazan" target="_blank" class="social-link">
+                                <span>💻</span> <span data-i18n="about.socialGH">GitHub Profili</span>
+                            </a>
+                            <a href="mart_2026_cv.pdf" download class="btn btn-primary"
+                                style="justify-content:center; margin-top:0.5rem;">
+                                <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path d="M12 5v14m7-7l-7 7-7-7" />
+                                </svg>
+                                <span data-i18n="about.btnCV">⬇ CV İndir</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Details -->
+                <div class="fade-up fade-up-delay-1">
+
+                    <!-- Özet -->
+                    <div class="glass-card about-detail-section" style="margin-bottom:1.5rem;">
+                        <h3 data-i18n="about.secSummary">🧑‍🎓 Özet</h3>
+                        <p data-i18n="about.summaryText">
+                            Bandırma Onyedi Eylül Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim.
+                            Mobil uygulama geliştirme (Flutter/Dart) ve modern web teknolojileri (HTML/CSS/JS) üzerine
+                            odaklanarak uçtan uca, kullanıcı dostu projeler geliştiriyorum. Geliştirdiğim uygulamaları
+                            Google Play Store'da yayınlama ve canlı web projelerini yönetme tecrübesine sahibim.
+                            Üniversite topluluklarında aktif rol alarak takım çalışması yetkinliklerimi güçlendiriyorum;
+                            teorik ve algoritmik bilgimi değer üreten yazılım projelerinde kullanarak sektörde kendimi
+                            geliştirmeyi hedefliyorum.
+                        </p>
+                    </div>
+
+                    <!-- Eğitim -->
+                    <div class="glass-card about-detail-section" style="margin-bottom:1.5rem;">
+                        <h3 data-i18n="about.secEdu">🏫 Eğitim</h3>
+                        <div class="edu-item">
+                            <div class="edu-icon">🎓</div>
+                            <div>
+                                <div class="edu-title" data-i18n="about.eduTitle">Bandırma Onyedi Eylül Üniversitesi
+                                </div>
+                                <div class="edu-sub" data-i18n="about.eduSub">Yazılım Mühendisliği · 3. Sınıf · 2023 –
+                                    Devam</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beceriler -->
+                    <div class="glass-card">
+                        <h3 data-i18n="about.secSkills">⚡ Teknoloji & Beceriler</h3>
+
+                        <div class="skill-category">
+                            <div class="skill-category-title" data-i18n="about.catMobile">Mobil Geliştirme</div>
+                            <div class="skills-grid">
+                                <span class="skill-pill">Flutter</span>
+                                <span class="skill-pill">Dart</span>
+                                <span class="skill-pill">Firebase</span>
+                                <span class="skill-pill">Google Play Store</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="skill-category-title" data-i18n="about.catWeb">Web Geliştirme</div>
+                            <div class="skills-grid">
+                                <span class="skill-pill">HTML5</span>
+                                <span class="skill-pill">CSS3</span>
+                                <span class="skill-pill">JavaScript</span>
+                                <span class="skill-pill">Node.js</span>
+                                <span class="skill-pill">Responsive Tasarım</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="skill-category-title" data-i18n="about.catTools">Araçlar & Diğer</div>
+                            <div class="skills-grid">
+                                <span class="skill-pill">Git & GitHub</span>
+                                <span class="skill-pill">UI/UX Tasarım</span>
+                                <span class="skill-pill">Audio Streaming</span>
+                                <span class="skill-pill">Algoritmalar</span>
+                                <span class="skill-pill">Takım Çalışması</span>
+                            </div>
+                        </div>
+
+                        <div class="stats-row" style="padding-top:1.5rem; border-top: 1px solid var(--border);">
+                            <div class="stat-item">
+                                <div class="stat-num">2+</div>
+                                <div class="stat-label" data-i18n="about.statProjects">Canlı Proje</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-num">1</div>
+                                <div class="stat-label" data-i18n="about.statIntern">Staj Deneyimi</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-num">3+</div>
+                                <div class="stat-label" data-i18n="about.statYears">Yıl Kodlama</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html" data-i18n="nav.about">Hakkımda</a>
+            <a href="experience.html" data-i18n="nav.experience">Staj</a>
+            <a href="projects.html" data-i18n="nav.projects">Projeler</a>
+            <a href="contact.html" data-i18n="nav.contact">İletişim</a>
+            <a href="https://www.linkedin.com/in/sude-kazan-0478b9297/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/sudekazan" target="_blank">GitHub</a>
+        </div>
+        <p data-i18n="footer.rights">© 2025 <strong>Sude Kazan</strong> — Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

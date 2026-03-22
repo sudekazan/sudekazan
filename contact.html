@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim | Sude Kazan</title>
+    <meta name="description" content="Sude Kazan ile iletişime geçin — e-posta, telefon, LinkedIn ve iletişim formu." />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo">Sude Kazan</a>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html" data-i18n="nav.home">Ana Sayfa</a>
+            <a href="about.html" data-i18n="nav.about">Hakkımda</a>
+            <a href="experience.html" data-i18n="nav.experience">Staj</a>
+            <a href="projects.html" data-i18n="nav.projects">Projeler</a>
+            <a href="contact.html" data-i18n="nav.contact">İletişim</a>
+        </div>
+        <div class="nav-controls">
+            <button class="nav-ctrl-btn" id="theme-toggle" aria-label="Tema değiştir">🌙</button>
+            <button class="nav-ctrl-btn lang-btn" id="lang-toggle" aria-label="Dil değiştir">EN</button>
+            <button class="hamburger" id="hamburger" aria-label="Menü">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+
+        <div class="page-hero fade-up">
+            <p class="section-tag" data-i18n="contact.tag">İletişim</p>
+            <h1 style="margin-bottom:0.5rem;" data-i18n="contact.heroTitle">Bana <span class="grad-text">Ulaşın</span>
+            </h1>
+            <p data-i18n="contact.heroSub">Proje teklifleri, iş birliği fırsatları veya sadece merhaba demek için
+                yazmaktan çekinmeyin!</p>
+        </div>
+
+        <div class="container contact-section">
+            <div class="contact-grid">
+
+                <!-- Left: Contact Info -->
+                <div class="fade-up">
+                    <div class="contact-info-block">
+                        <h3 data-i18n="contact.secInfo">📬 İletişim Bilgileri</h3>
+
+                        <a href="mailto:sudekazan1907@gmail.com" class="contact-card">
+                            <div class="contact-card-icon">📧</div>
+                            <div>
+                                <div class="label" data-i18n="contact.lblEmail">E-posta</div>
+                                <div class="value">sudekazan1907@gmail.com</div>
+                            </div>
+                        </a>
+
+                        <!-- <a href="tel:+905510103652" class="contact-card">
+                            <div class="contact-card-icon teal">📞</div>
+                            <div>
+                                <div class="label" data-i18n="contact.lblPhone">Telefon</div>
+                                <div class="value">+90 551 010 3652</div>
+                            </div>
+                        </a> -->
+
+                        <a href="https://www.linkedin.com/in/sude-kazan-0478b9297/" target="_blank"
+                            class="contact-card">
+                            <div class="contact-card-icon">🔗</div>
+                            <div>
+                                <div class="label" data-i18n="contact.lblLI">LinkedIn</div>
+                                <div class="value">sude-kazan-0478b9297</div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/sudekazan" target="_blank" class="contact-card">
+                            <div class="contact-card-icon teal">💻</div>
+                            <div>
+                                <div class="label" data-i18n="contact.lblGH">GitHub</div>
+                                <div class="value">github.com/sudekazan</div>
+                            </div>
+                        </a>
+
+                        <div class="availability-box">
+                            <p><span class="dot"></span><span data-i18n="contact.availTitle">Yeni Fırsatlara
+                                    Açığım</span></p>
+                            <small data-i18n="contact.availDesc">Staj, freelance proje veya iş birliği tekliflerine kısa
+                                sürede geri dönüyorum.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="fade-up fade-up-delay-1">
+                    <div class="glass-card form-card">
+                        <h3 data-i18n="contact.formTitle">💬 Mesaj Gönder</h3>
+                        <form id="contact-form" action="https://formspree.io/f/xojkzzze" method="POST" novalidate>
+                            <div class="form-group">
+                                <label for="name" data-i18n="contact.lblName">Adınız</label>
+                                <input type="text" id="name" name="name" data-i18n-placeholder="contact.phName"
+                                    placeholder="Adınızı girin" required />
+                                <span class="form-error" data-i18n="contact.errName">Lütfen adınızı girin.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-i18n="contact.lblEmail2">E-posta Adresiniz</label>
+                                <input type="email" id="email" name="_replyto" data-i18n-placeholder="contact.phEmail"
+                                    placeholder="ornek@email.com" required />
+                                <span class="form-error" data-i18n="contact.errEmail">Lütfen geçerli bir e-posta
+                                    girin.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" data-i18n="contact.lblSubject">Konu</label>
+                                <input type="text" id="subject" name="subject" data-i18n-placeholder="contact.phSubject"
+                                    placeholder="Mesajınızın konusu" required />
+                                <span class="form-error" data-i18n="contact.errSubject">Lütfen konu girin.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-i18n="contact.lblMsg">Mesajınız</label>
+                                <textarea id="message" name="message" data-i18n-placeholder="contact.phMsg"
+                                    placeholder="Merhaba Sude, seninle..." required></textarea>
+                                <span class="form-error" data-i18n="contact.errMsg">Lütfen mesajınızı yazın.</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+                                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                                </svg>
+                                <span data-i18n="contact.btnSend">Gönder</span>
+                            </button>
+                        </form>
+                        <div id="form-success" class="form-success">
+                            ✅ Mesajınız alındı! En kısa sürede geri döneceğim.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html" data-i18n="nav.about">Hakkımda</a>
+            <a href="experience.html" data-i18n="nav.experience">Staj</a>
+            <a href="projects.html" data-i18n="nav.projects">Projeler</a>
+            <a href="contact.html" data-i18n="nav.contact">İletişim</a>
+            <a href="https://www.linkedin.com/in/sude-kazan-0478b9297/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/sudekazan" target="_blank">GitHub</a>
+        </div>
+        <p data-i18n="footer.rights">© 2025 <strong>Sude Kazan</strong> — Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
