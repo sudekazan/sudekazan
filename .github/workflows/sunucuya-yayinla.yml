@@ -1,0 +1,37 @@
+name: sunucuya-yayinla
+# main'e her gönderimde site dosyalarını sunucudaki /srv/sites/sudenurkazan.com.tr klasörüne kopyalar.
+# Anahtar sunucuda rrsync ile o klasöre kısıtlı: yalnızca dosya kopyalayabilir, komut çalıştıramaz.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency: sunucuya-yayinla
+permissions:
+  contents: read
+
+jobs:
+  yayinla:
+    runs-on: ubuntu-latest
+    env:
+      SERVER_IP: ${{ secrets.SERVER_IP }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: SSH hazırlığı
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/yayin
+          chmod 600 ~/.ssh/yayin
+          ssh-keyscan -H "$SERVER_IP" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Dosyaları kopyala
+        run: |
+          # Hedef "/" kısıtlı klasörün kendisi demek
+          rsync -rltz --delete --itemize-changes \
+            --exclude '.git/' --exclude '.github/' --exclude 'README.md' \
+            -e "ssh -i ~/.ssh/yayin -o IdentitiesOnly=yes" \
+            ./ "deploy@${SERVER_IP}:/"
+
+      - name: Siteyi kontrol et
+        run: curl -sf -o /dev/null https://sudenurkazan.com.tr/ && echo "site açılıyor"
